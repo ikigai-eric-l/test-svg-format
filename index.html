@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <style>
+    <style>
       body {
         margin: 0;
       }
-      svg {
+      /* svg {
         preserveaspectratio: "xMidYMid meet";
         shape-rendering: crispEdges;
       }
@@ -17,11 +17,15 @@
         transform: translateZ(0);
         backface-visibility: hidden;
         perspective: 1000;
-      }
-    </style> -->
+      } */
+      figcaption  {
+        text-align: center;
+       }
+    </style>
   </head>
   <body>
-    <div>
+    <div style=" margin-bottom:40px;">
+      <figcaption>pure SVG</figcaption>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 294 519">
         <g filter="url(#Board_svg__a)">
           <path
@@ -4602,9 +4606,18 @@
           </radialGradient>
         </defs>
       </svg>
+      
     </div>
 
-    <!-- <img src="./BetGrid.svg" alt="" /> -->
-    <img src="./betGrid.png" alt="" style="width: 100vw" />
+    <div style=" margin-bottom:40px;">
+      <figcaption>SVG in img</figcaption>
+      <code>img src="svg"</code>
+      <img src="./BetGrid.svg" />
+    </div>
+
+    
+
+    <figcaption>PNG</figcaption>
+    <img src="./betGrid.png" style="width: 100vw;" />
   </body>
 </html>
