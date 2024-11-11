@@ -20,19 +20,35 @@
         backface-visibility: hidden;
         perspective: 1000;
       } */
-      figcaption  {
+      figcaption {
         text-align: center;
-       }
+      }
+      .box {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .thumb {
+        /* max-width: 400px; */
+        /* margin: 400px auto 0; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* flex-direction: column; */
+      }
+      .thumb img {
+        max-width: 400px;
+      
+      }
     </style>
   </head>
   <body>
-    <div style="margin-bottom:40px;">
+    <div style="margin-bottom: 40px" class="box">
       <figcaption>SVG in img</figcaption>
       <code>(img src="svg")</code>
       <img src="./BetGrid.svg" />
     </div>
-    
-    <div style=" margin-bottom:40px;">
+
+    <div style="margin-bottom: 40px" class="box">
       <figcaption>pure SVG</figcaption>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 294 519">
         <g filter="url(#Board_svg__a)">
@@ -4614,10 +4630,32 @@
           </radialGradient>
         </defs>
       </svg>
-      
-    </div>    
+    </div>
 
-    <figcaption>PNG</figcaption>
-    <img src="./betGrid.png" style="width: 100vw;" />
+    <div class="box">
+      <figcaption>PNG</figcaption>
+      <img src="./betGrid.png" style="width: 100%" />
+    </div>
+
+    <div style="height:200px;"></div>
+
+
+    <div class="thumb">
+      <div>
+        <div>PNG </div>
+        <img src="png.PNG" >
+      </div>
+      <div>
+        <div>pure SVG </div>
+        <img src="img.PNG" >
+      </div>
+      <div>
+        <div>img src="svg"</div>
+        <img src="svg.PNG" >
+      </div>
+    </div>
+    <div class="thumb">
+      Safari in mobile
+    </div>
   </body>
 </html>
